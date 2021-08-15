@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "Lexend Deca";
+    src: url(LexendDeca-Regular.ttf);
+}
+@font-face {
+    font-family: "Big Shoulders Display";
+    src: url(BigShouldersDisplay-Regular.ttf);
+}
+
+/*Containers*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    min-height: 100vh;
+    max-width: 900px;
+}
+.sedanscontainer {
+    padding: 0;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0 10px;
+}
+.suvscontainer {
+    padding: 0;
+    background-color: hsl(184, 100%, 22%);
+}
+.luxurycontainer {
+    padding: 0;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+.cardcontainer {
+    margin-bottom: 20px;
+    padding: 40px;
+}
+/*Text*/
+h2 {
+    font-size: 40px;
+    color: #fff;
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+}
+p {
+    font-size: 15px;
+    padding-bottom: 80px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca";
+    font-weight: 400;
+}
+/*Buttons*/
+.btn {
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #fff;
+    font-family: "Lexend Deca";
+    font-weight: 600;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.btn-sedans {
+    color: hsl(31, 77%, 52%);
+}
+.btn-sedans:hover {
+    background-color: rgb(0, 0, 0, 0);
+    color: #fff;
+}
+.btn-suvs {
+    color: hsl(184, 100%, 22%);
+}
+.btn-suvs:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+.btn-luxury {
+    color: hsl(179, 100%, 13%);
+}
+.btn-luxury:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+/*footer*/
+.attribution {
+    background-color: #000000;
+    text-align: center;
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    color: #fff;
+    padding: 10px;
+}
+
+/*Screen size*/
+@media screen and (max-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .sedanscontainer {
+        border-radius: 10px 10px 0 0;
+    }
+    .luxurycontainer {
+        border-radius: 0 0 10px 10px;
+    }
+    p {
+        padding-bottom: 40px;
+    }
+}
